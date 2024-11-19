@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="TestSuite3">
+    <!-- Parallel="false" means tests are run sequentially -->
+    <test name="Error Validation Test">
+        <packages>
+            <package name="tests">
+                <exclude name ="submitOrder"/>
+            </package>
+        </packages>
+    </test>
+</suite>
